@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desi Fashion Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="#" class="logo">apnaStyle</a>
+
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#" data-aos="fade-down" data-aos-delay="100">Home</a>
+          </li>
+          <li>
+            <a href="#" data-aos="fade-down" data-aos-delay="200">Shop</a>
+          </li>
+          <li>
+            <a href="#" data-aos="fade-down" data-aos-delay="300">Collection</a>
+          </li>
+          <li>
+            <a href="#" data-aos="fade-down" data-aos-delay="400">About</a>
+          </li>
+          <li>
+            <a href="#" data-aos="fade-down" data-aos-delay="500">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end............................................. -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>Discover your Style</h1>
+
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consectetur odit libero, maxime velit cumque dolorum dolorem
+            sapiente expedita officiis alias? Ratione dolorem omnis saepe nihil
+            incidunt eius quaerat asperiores optio.
+          </p>
+
+          <a href="" class="cta-button">Shop Now</a>
+        </div>
+        <div class="hero-image-container" data-aos="fade-left">
+          <img src="model.png" alt="fashion" class="hero-image" />
+
+          <div class="spinning-icons">
+            <div class="icon-obit" style="top: 10%; left: 10%">
+              <i class="fa-solid fa-shirt"></i>
+            </div>
+            <div class="icon-obit" style="top: 70%; left: 80%">
+              <i class="fa-solid fa-shoe-prints"></i>
+            </div>
+            <div class="icon-obit" style="top: 80%; left: 20%">
+              <i class="fa-solid fa-hat-cowboy"></i>
+            </div>
+            <div class="icon-obit" style="top: 20%; left: 85%">
+              <i class="fa-solid fa-glasses"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end....................................... -->
+
+    <section class="shop-section">
+      <div class="shop-header" data-aos="fade-up">
+        <h2>New Arrivals</h2>
+        <p>Discover Our Latest Collection of Premium Fashion Items</p>
+      </div>
+
+      <div class="filter-bar">
+        <div class="fillter-buttons" data-aos="fade-right">
+          <button class="filter-btn active">All</button>
+          <button class="filter-btn">Clothing</button>
+          <button class="filter-btn">Shoes</button>
+          <button class="filter-btn">Accessories</button>
+        </div>
+
+        <select class="sort-select" data-aos="fade-left">
+          <option value="newest">newest First</option>
+          <option value="price-low">price: low to high</option>
+          <option value="price-high">price: high to low</option>
+          <option value="popular">Most Popular</option>
+        </select>
+      </div>
+
+      <!-- Product -->
+      <div class="product-grid">
+        <!--product- card 1 -->
+        <div class="product-card" data-aos="fade-right" data-aos-delay="100">
+          <div class="sale-bage">Sale</div>
+          <div class="product-image">
+            <img src="prod1.jpeg" alt="t-shirt.jpg" />
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="product-category">Clothing</div>
+            <h3 class="product-title">Premium Cotton T-Shirt</h3>
+            <div class="product-price">399.99 Rupees</div>
+            <div class="product-action">
+              <button class="wishlist-btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="filter-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!--product- card 2 -->
+        <div class="product-card" data-aos="fade-right" data-aos-delay="200">
+          <div class="sale-bage">Sale</div>
+          <div class="product-image">
+            <img src="prod2.jpg" alt="t-shirt.jpg" />
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="product-category">Clothing</div>
+            <h3 class="product-title">Premium Cotton T-Shirt</h3>
+            <div class="product-price">399.99 Rupees</div>
+            <div class="product-action">
+              <button class="wishlist-btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="filter-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!--product- card 3 -->
+        <div class="product-card" data-aos="fade-right" data-aos-delay="300">
+          <div class="sale-bage">Sale</div>
+          <div class="product-image">
+            <img src="prod3.jpeg" alt="t-shirt.jpg" />
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="product-category">Clothing</div>
+            <h3 class="product-title">Premium Cotton T-Shirt</h3>
+            <div class="product-price">399.99 Rupees</div>
+            <div class="product-action">
+              <button class="wishlist-btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="filter-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!--product- card 4 -->
+        <div class="product-card" data-aos="fade-right" data-aos-delay="400">
+          <div class="product-image">
+            <img src="prod4.jpeg" alt="t-shirt.jpg" />
+            <div class="product-overlay">
+              <button class="quick-view">Quick View</button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="product-category">Clothing</div>
+            <h3 class="product-title">Premium Cotton T-Shirt</h3>
+            <div class="product-price">399.99 Rupees</div>
+            <div class="product-action">
+              <button class="wishlist-btn">
+                <i class="fa-solid fa-heart"></i>
+              </button>
+              <button class="filter-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end....................................... -->
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-content" data-aos="fade-right">
+          <div class="about-header">
+            <h2>Our Story</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+              nam voluptate quas facilis optio quo asperiores quam, explicabo
+              itaque natus neque quis error, quidem recusandae animi tempore non
+              dolorum labore?
+            </p>
+          </div>
+          <div class="about-value">
+            <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+              <i class="value-icon fas fa-heart"></i>
+              <h3 class="value-title">Passion</h3>
+              <p class="value-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                hic quae nisi esse libero, consectetur voluptates! Fugiat
+                maxime!
+              </p>
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+              <i class="value-icon fas fa-globe"></i>
+              <h3 class="value-title">Sustainability</h3>
+              <p class="value-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                hic quae nisi esse libero, consectetur voluptates! Fugiat
+                maxime!
+              </p>
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+              <i class="value-icon fas fa-users"></i>
+              <h3 class="value-title">Community</h3>
+              <p class="value-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                hic quae nisi esse libero, consectetur voluptates! Fugiat
+                maxime!
+              </p>
+            </div>
+
+            <div class="value-card" data-aos="fade-up" data-aos-delay="400">
+              <i class="value-icon fas fa-award"></i>
+              <h3 class="value-title">Quality</h3>
+              <p class="value-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+                hic quae nisi esse libero, consectetur voluptates! Fugiat
+                maxime!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-image-container" data-aos="fade-left">
+          <img src="model.png" alt="about" class="about-main-image" />
+          <img src="model2.png" alt="workshop" class="about-main-overlay" />
+        </div>
+      </div>
+    </section>
+    <!-- end....................................... -->
+
+    <section class="team-section">
+      <div class="team-header" data-aos="fade-up">
+        <h2>Meet Our Team</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+          <img src="Pic.jpg" alt="Team Member" class="team-image" />
+          <h3 class="team-name">Dev Vashisht</h3>
+          <p class="team-role">Creative Director</p>
+          <div class="social-links">
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+          <img src="jay.png" alt="Team Member" class="team-image" />
+          <h3 class="team-name">Jay Chahal</h3>
+          <p class="team-role">Cyber Security</p>
+          <div class="social-links">
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+          <img src="vishant.png" alt="Team Member" class="team-image" />
+          <h3 class="team-name">Vishant Tomar</h3>
+          <p class="team-role">Property Dealer</p>
+          <div class="social-links">
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="team-member" data-aos="fade-up" data-aos-delay="400">
+          <img src="dhruv.png" alt="Team Member" class="team-image" />
+          <h3 class="team-name">Dhruv Vashisht</h3>
+          <p class="team-role">Aspiring Successful Student</p>
+          <div class="social-links">
+            <a href="#" class="social"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end....................................... -->
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-brand" data-aos="fade-right">
+          <a href="#" class="footer-logo">apnaStyle</a>
+          <p class="footer-description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
+            laudantium at modi nobis ut excepturi facilis, quo itaque harum
+            adipisci enim laboriosam, atque sit ex ipsum ducimus animi tenetur
+            eos?
+          </p>
+
+          <form action="#" class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              class="newsletter-input"
+              required
+            />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+
+          <div class="social-icons">
+            <a href="#" class="social-i"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-i"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-i"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-i"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
+          <h4>Quick Links</h4>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">Collection</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+          <h4>Customer Service</h4>
+          <a href="#">Shipping</a>
+          <a href="#">Returns</a>
+          <a href="#">FAQ</a>
+          <a href="#">Size Guide</a>
+          <a href="#">Track Order</a>
+        </div>
+
+        <div class="footer-links" data-aos="fade-up" data-aos-delay="300">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Services</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Cookie Policy</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&#xA9; 2025 apnaStyle All Right Reserved</p>
+          <div class="payment-icons">
+            <i class="fab fa-cc-visa"></i>
+            <i class="fab fa-cc-mastercard"></i>
+            <i class="fab fa-cc-paypal"></i>
+            <i class="fab fa-cc-amex"></i>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
