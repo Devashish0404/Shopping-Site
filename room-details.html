@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Room Details - Captain Hotel & Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="pages.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-content">
+        <a href="index.html" class="logo">Captain Hotel & Restaurant</a>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#rooms">Rooms</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="room-details-section">
+      <div class="room-details-container">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+          <a href="index.html#home">Home</a>
+          <span>/</span>
+          <a href="index.html#rooms">Rooms</a>
+          <span>/</span>
+          <span id="breadcrumb-room-name">Room Details</span>
+        </div>
+
+        <!-- Room Header -->
+        <div class="room-header">
+          <h1 id="room-title">Comfortable Standard Room</h1>
+          <div class="room-meta">
+            <span class="room-type" id="room-category">Standard Room</span>
+            <span class="room-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+              <span>4.0</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="room-gallery">
+          <div class="main-image-container">
+            <img id="main-image" src="prod1.jpeg" alt="Room Image" class="main-image" />
+            <button class="gallery-nav prev-btn" id="prevBtn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="gallery-nav next-btn" id="nextBtn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="thumbnail-container">
+            <img src="prod1.jpeg" alt="Room" class="thumbnail active" data-index="0" />
+            <img src="prod2.jpg" alt="Room" class="thumbnail" data-index="1" />
+            <img src="prod3.jpeg" alt="Room" class="thumbnail" data-index="2" />
+            <img src="prod4.jpeg" alt="Room" class="thumbnail" data-index="3" />
+          </div>
+        </div>
+
+        <!-- Room Content -->
+        <div class="room-content">
+          <div class="room-main-content">
+            <!-- Room Description -->
+            <div class="room-description">
+              <h2>About This Room</h2>
+              <p id="room-description">
+                Experience comfort and elegance in our well-appointed standard room. 
+                Designed with your comfort in mind, this room features modern amenities 
+                and a cozy atmosphere perfect for both business and leisure travelers. 
+                The room offers a peaceful retreat after a long day of travel or work.
+              </p>
+            </div>
+
+            <!-- Room Features -->
+            <div class="room-features">
+              <h2>Room Features</h2>
+              <div class="features-grid">
+                <div class="feature-item">
+                  <i class="fas fa-bed"></i>
+                  <div>
+                    <h4>Bed Type</h4>
+                    <p id="bed-type">King Size Bed</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-users"></i>
+                  <div>
+                    <h4>Capacity</h4>
+                    <p id="room-capacity">2 Adults</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-ruler-combined"></i>
+                  <div>
+                    <h4>Room Size</h4>
+                    <p id="room-size">250 sq. ft.</p>
+                  </div>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-door-open"></i>
+                  <div>
+                    <h4>View</h4>
+                    <p id="room-view">City View</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Amenities -->
+            <div class="room-amenities">
+              <h2>Amenities</h2>
+              <div class="amenities-grid">
+                <div class="amenity-item">
+                  <i class="fas fa-wifi"></i>
+                  <span>Free Wi-Fi</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-tv"></i>
+                  <span>LED TV</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-snowflake"></i>
+                  <span>Air Conditioning</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-coffee"></i>
+                  <span>Coffee Maker</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-shower"></i>
+                  <span>Hot Water</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-lock"></i>
+                  <span>Safe</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-utensils"></i>
+                  <span>Mini Bar</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-phone"></i>
+                  <span>Phone</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-tshirt"></i>
+                  <span>Laundry Service</span>
+                </div>
+                <div class="amenity-item">
+                  <i class="fas fa-concierge-bell"></i>
+                  <span>Room Service</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Policies -->
+            <div class="room-policies">
+              <h2>Policies</h2>
+              <div class="policy-list">
+                <div class="policy-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <h4>Check-in / Check-out</h4>
+                    <p>Check-in: 2:00 PM | Check-out: 11:00 AM</p>
+                  </div>
+                </div>
+                <div class="policy-item">
+                  <i class="fas fa-ban"></i>
+                  <div>
+                    <h4>Smoking Policy</h4>
+                    <p>Non-smoking room</p>
+                  </div>
+                </div>
+                <div class="policy-item">
+                  <i class="fas fa-paw"></i>
+                  <div>
+                    <h4>Pet Policy</h4>
+                    <p>Pets not allowed</p>
+                  </div>
+                </div>
+                <div class="policy-item">
+                  <i class="fas fa-calendar-times"></i>
+                  <div>
+                    <h4>Cancellation</h4>
+                    <p>Free cancellation up to 48 hours before check-in</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Booking Sidebar -->
+          <div class="booking-sidebar">
+            <div class="booking-card">
+              <div class="price-section">
+                <span class="price-label">Starting from</span>
+                <div class="price">
+                  <span class="currency">₹</span>
+                  <span id="room-price">2,500</span>
+                  <span class="period">/ night</span>
+                </div>
+              </div>
+
+              <form class="quick-booking-form" id="quickBookingForm">
+                <div class="form-group">
+                  <label for="quickCheckIn">Check-in</label>
+                  <input type="date" id="quickCheckIn" name="checkIn" required />
+                </div>
+                <div class="form-group">
+                  <label for="quickCheckOut">Check-out</label>
+                  <input type="date" id="quickCheckOut" name="checkOut" required />
+                </div>
+                <div class="form-group">
+                  <label for="quickGuests">Guests</label>
+                  <select id="quickGuests" name="guests" required>
+                    <option value="1">1 Guest</option>
+                    <option value="2" selected>2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                  </select>
+                </div>
+                <button type="submit" class="book-now-btn">
+                  <i class="fas fa-calendar-check"></i> Book Now
+                </button>
+              </form>
+
+              <div class="contact-info">
+                <h3>Need Help?</h3>
+                <p><i class="fas fa-phone"></i> +91 XXXXX XXXXX</p>
+                <p><i class="fas fa-envelope"></i> info@captainhotel.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-section">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="index.html#home" class="footer-logo">Captain Hotel & Restaurant</a>
+          <p class="footer-description">
+            Experience exceptional hospitality and authentic cuisine at Captain
+            Hotel & Restaurant, where military precision meets warm Indian
+            service.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html#home">Home</a>
+          <a href="index.html#rooms">Rooms</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#about">About Us</a>
+          <a href="index.html#contact">Contact</a>
+        </div>
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <a href="booking.html">Booking</a>
+          <a href="cancellation.html">Cancellation</a>
+          <a href="faq.html">FAQ</a>
+          <a href="payment.html">Payment</a>
+          <a href="track-booking.html">Track Booking</a>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&#xA9; 2026 Captain Hotel & Restaurant All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="room-details.js"></script>
+  </body>
+</html>
+

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desi Fashion Store</title>
+    <title>Captain Hotel & Restaurant</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -14,45 +14,48 @@
   <body>
     <nav class="navbar">
       <div class="nav-content">
-        <a href="#" class="logo">apnaStyle</a>
+        <a href="#home" class="logo">Captain Hotel & Restaurant</a>
 
         <div class="menu-toggle">
           <i class="fa-solid fa-bars"></i>
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#" data-aos="fade-down" data-aos-delay="100">Home</a>
+            <a href="#home" data-aos="fade-down" data-aos-delay="100">Home</a>
           </li>
           <li>
-            <a href="#" data-aos="fade-down" data-aos-delay="200">Shop</a>
+            <a href="#rooms" data-aos="fade-down" data-aos-delay="200">Rooms</a>
           </li>
           <li>
-            <a href="#" data-aos="fade-down" data-aos-delay="300">Collection</a>
+            <a href="services.html" data-aos="fade-down" data-aos-delay="300">Services</a>
           </li>
           <li>
-            <a href="#" data-aos="fade-down" data-aos-delay="400">About</a>
+            <a href="#about" data-aos="fade-down" data-aos-delay="400">About</a>
           </li>
           <li>
-            <a href="#" data-aos="fade-down" data-aos-delay="500">Contact</a>
+            <a href="#contact" data-aos="fade-down" data-aos-delay="500">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
     <!-- end............................................. -->
 
-    <section class="hero">
+    <section id="home" class="hero">
       <div class="hero-content">
         <div class="hero-text" data-aos="fade-right">
-          <h1>Discover your Style</h1>
+          <h1>Welcome to Captain Hotel & Restaurant</h1>
 
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Consectetur odit libero, maxime velit cumque dolorum dolorem
-            sapiente expedita officiis alias? Ratione dolorem omnis saepe nihil
-            incidunt eius quaerat asperiores optio.
+            Experience exceptional hospitality and authentic cuisine at Captain
+            Hotel & Restaurant, where military precision meets warm service.
+            Owned and operated by a retired Captain from the Indian Army, we
+            bring you the finest in accommodation and dining with the
+            discipline, dedication, and honor that defines our heritage. Whether
+            you're seeking a comfortable stay or a memorable dining experience,
+            we promise excellence in every detail.
           </p>
 
-          <a href="" class="cta-button">Shop Now</a>
+          <a href="#rooms" class="cta-button">Book Now</a>
         </div>
         <div class="hero-image-container" data-aos="fade-left">
           <img src="model.png" alt="fashion" class="hero-image" />
@@ -77,24 +80,24 @@
 
     <!-- end....................................... -->
 
-    <section class="shop-section">
+    <section id="rooms" class="shop-section">
       <div class="shop-header" data-aos="fade-up">
-        <h2>New Arrivals</h2>
-        <p>Discover Our Latest Collection of Premium Fashion Items</p>
+        <h2>Luxurious Rooms</h2>
+        <p>Discover Our Luxurious Bedroom Collection</p>
       </div>
 
       <div class="filter-bar">
         <div class="fillter-buttons" data-aos="fade-right">
-          <button class="filter-btn active">All</button>
-          <button class="filter-btn">Clothing</button>
-          <button class="filter-btn">Shoes</button>
-          <button class="filter-btn">Accessories</button>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="standard">Standard</button>
+          <button class="filter-btn" data-filter="deluxe">Deluxe</button>
+          <button class="filter-btn" data-filter="suite">Suite</button>
         </div>
 
-        <select class="sort-select" data-aos="fade-left">
-          <option value="newest">newest First</option>
-          <option value="price-low">price: low to high</option>
-          <option value="price-high">price: high to low</option>
+        <select class="sort-select" data-aos="fade-left" id="sortSelect">
+          <option value="newest">Newest First</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
           <option value="popular">Most Popular</option>
         </select>
       </div>
@@ -102,105 +105,127 @@
       <!-- Product -->
       <div class="product-grid">
         <!--product- card 1 -->
-        <div class="product-card" data-aos="fade-right" data-aos-delay="100">
-          <div class="sale-bage">Sale</div>
+        <div class="product-card" data-category="standard" data-price="2500" data-popularity="4" data-aos="fade-right" data-aos-delay="100">
+          <div class="sale-bage">Best Value</div>
           <div class="product-image">
-            <img src="prod1.jpeg" alt="t-shirt.jpg" />
+            <a href="room-details.html?type=standard" style="display: block; width: 100%; height: 100%;">
+              <img src="prod1.jpeg" alt="Standard Room" />
+            </a>
             <div class="product-overlay">
-              <button class="quick-view">Quick View</button>
+              <a href="room-details.html?type=standard" class="quick-view" data-room="standard">Quick View</a>
             </div>
           </div>
 
           <div class="product-details">
-            <div class="product-category">Clothing</div>
-            <h3 class="product-title">Premium Cotton T-Shirt</h3>
-            <div class="product-price">399.99 Rupees</div>
+            <div class="product-category">Standard Room</div>
+            <h3 class="product-title">
+              <a href="room-details.html?type=standard" style="text-decoration: none; color: inherit;">Comfortable Standard Room</a>
+            </h3>
+            <div class="product-price">₹2,500 / Night</div>
             <div class="product-action">
-              <button class="wishlist-btn">
+              <button class="wishlist-btn" data-room="standard">
                 <i class="fa-solid fa-heart"></i>
               </button>
-              <button class="filter-btn">Add to Cart</button>
+              <button class="book-btn" data-room="standard">Book Now</button>
             </div>
           </div>
         </div>
         <!--product- card 2 -->
-        <div class="product-card" data-aos="fade-right" data-aos-delay="200">
-          <div class="sale-bage">Sale</div>
+        <div class="product-card" data-category="deluxe" data-price="4500" data-popularity="5" data-aos="fade-right" data-aos-delay="200">
+          <div class="sale-bage">Popular</div>
           <div class="product-image">
-            <img src="prod2.jpg" alt="t-shirt.jpg" />
+            <a href="room-details.html?type=deluxe" style="display: block; width: 100%; height: 100%;">
+              <img src="prod2.jpg" alt="Deluxe Room" />
+            </a>
             <div class="product-overlay">
-              <button class="quick-view">Quick View</button>
+              <a href="room-details.html?type=deluxe" class="quick-view" data-room="deluxe">Quick View</a>
             </div>
           </div>
 
           <div class="product-details">
-            <div class="product-category">Clothing</div>
-            <h3 class="product-title">Premium Cotton T-Shirt</h3>
-            <div class="product-price">399.99 Rupees</div>
+            <div class="product-category">Deluxe Room</div>
+            <h3 class="product-title">
+              <a href="room-details.html?type=deluxe" style="text-decoration: none; color: inherit;">Spacious Deluxe Room</a>
+            </h3>
+            <div class="product-price">₹4,500 / Night</div>
             <div class="product-action">
-              <button class="wishlist-btn">
+              <button class="wishlist-btn" data-room="deluxe">
                 <i class="fa-solid fa-heart"></i>
               </button>
-              <button class="filter-btn">Add to Cart</button>
+              <button class="book-btn" data-room="deluxe">Book Now</button>
             </div>
           </div>
         </div>
         <!--product- card 3 -->
-        <div class="product-card" data-aos="fade-right" data-aos-delay="300">
-          <div class="sale-bage">Sale</div>
+        <div class="product-card" data-category="suite" data-price="7500" data-popularity="5" data-aos="fade-right" data-aos-delay="300">
+          <div class="sale-bage">Luxury</div>
           <div class="product-image">
-            <img src="prod3.jpeg" alt="t-shirt.jpg" />
+            <a href="room-details.html?type=suite" style="display: block; width: 100%; height: 100%;">
+              <img src="prod3.jpeg" alt="Suite Room" />
+            </a>
             <div class="product-overlay">
-              <button class="quick-view">Quick View</button>
+              <a href="room-details.html?type=suite" class="quick-view" data-room="suite">Quick View</a>
             </div>
           </div>
 
           <div class="product-details">
-            <div class="product-category">Clothing</div>
-            <h3 class="product-title">Premium Cotton T-Shirt</h3>
-            <div class="product-price">399.99 Rupees</div>
+            <div class="product-category">Suite</div>
+            <h3 class="product-title">
+              <a href="room-details.html?type=suite" style="text-decoration: none; color: inherit;">Luxurious Suite</a>
+            </h3>
+            <div class="product-price">₹7,500 / Night</div>
             <div class="product-action">
-              <button class="wishlist-btn">
+              <button class="wishlist-btn" data-room="suite">
                 <i class="fa-solid fa-heart"></i>
               </button>
-              <button class="filter-btn">Add to Cart</button>
+              <button class="book-btn" data-room="suite">Book Now</button>
             </div>
           </div>
         </div>
         <!--product- card 4 -->
-        <div class="product-card" data-aos="fade-right" data-aos-delay="400">
+        <div class="product-card" data-category="standard" data-price="3000" data-popularity="3" data-aos="fade-right" data-aos-delay="400">
           <div class="product-image">
-            <img src="prod4.jpeg" alt="t-shirt.jpg" />
+            <a href="room-details.html?type=standard" style="display: block; width: 100%; height: 100%;">
+              <img src="prod4.jpeg" alt="Standard Room" />
+            </a>
             <div class="product-overlay">
-              <button class="quick-view">Quick View</button>
+              <a href="room-details.html?type=standard" class="quick-view" data-room="standard">Quick View</a>
             </div>
           </div>
 
           <div class="product-details">
-            <div class="product-category">Clothing</div>
-            <h3 class="product-title">Premium Cotton T-Shirt</h3>
-            <div class="product-price">399.99 Rupees</div>
+            <div class="product-category">Standard Room</div>
+            <h3 class="product-title">
+              <a href="room-details.html?type=standard" style="text-decoration: none; color: inherit;">Cozy Standard Room</a>
+            </h3>
+            <div class="product-price">₹3,000 / Night</div>
             <div class="product-action">
-              <button class="wishlist-btn">
+              <button class="wishlist-btn" data-room="standard">
                 <i class="fa-solid fa-heart"></i>
               </button>
-              <button class="filter-btn">Add to Cart</button>
+              <button class="book-btn" data-room="standard">Book Now</button>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- end....................................... -->
-    <section class="about-section">
+    <section id="about" class="about-section">
       <div class="about-container">
         <div class="about-content" data-aos="fade-right">
           <div class="about-header">
             <h2>Our Story</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
-              nam voluptate quas facilis optio quo asperiores quam, explicabo
-              itaque natus neque quis error, quidem recusandae animi tempore non
-              dolorum labore?
+              Captain Hotel & Restaurant stands as a testament to service,
+              excellence, and dedication. Founded by a retired Captain from the
+              Indian Army, our establishment embodies the values of discipline,
+              integrity, and commitment to excellence that were instilled
+              through years of military service. We bring the same level of
+              precision and care to hospitality that was once dedicated to
+              serving the nation. Every guest is treated with respect, every
+              meal prepared with passion, and every stay designed to be
+              memorable. Experience the perfect blend of military
+              professionalism and warm Indian hospitality.
             </p>
           </div>
           <div class="about-value">
@@ -208,9 +233,10 @@
               <i class="value-icon fas fa-heart"></i>
               <h3 class="value-title">Passion</h3>
               <p class="value-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                hic quae nisi esse libero, consectetur voluptates! Fugiat
-                maxime!
+                Our passion for hospitality drives everything we do. From
+                crafting authentic Indian cuisine to ensuring your comfort, we
+                pour our heart into every detail, creating experiences that stay
+                with you long after you leave.
               </p>
             </div>
 
@@ -218,9 +244,10 @@
               <i class="value-icon fas fa-globe"></i>
               <h3 class="value-title">Sustainability</h3>
               <p class="value-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                hic quae nisi esse libero, consectetur voluptates! Fugiat
-                maxime!
+                We are committed to sustainable practices, sourcing locally
+                grown ingredients and implementing eco-friendly operations. Our
+                dedication to environmental responsibility ensures a better
+                future for generations to come.
               </p>
             </div>
 
@@ -228,9 +255,10 @@
               <i class="value-icon fas fa-users"></i>
               <h3 class="value-title">Community</h3>
               <p class="value-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                hic quae nisi esse libero, consectetur voluptates! Fugiat
-                maxime!
+                We believe in building strong connections with our local
+                community. By supporting local suppliers, creating employment
+                opportunities, and fostering relationships, we contribute to the
+                growth and prosperity of our neighborhood.
               </p>
             </div>
 
@@ -238,9 +266,10 @@
               <i class="value-icon fas fa-award"></i>
               <h3 class="value-title">Quality</h3>
               <p class="value-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-                hic quae nisi esse libero, consectetur voluptates! Fugiat
-                maxime!
+                Excellence is not negotiable. With military precision and
+                attention to detail, we maintain the highest standards in every
+                aspect of our service—from the finest ingredients in our kitchen
+                to the impeccable cleanliness of our rooms.
               </p>
             </div>
           </div>
@@ -254,10 +283,10 @@
     </section>
     <!-- end....................................... -->
 
-    <section class="team-section">
+    <section id="services" class="team-section">
       <div class="team-header" data-aos="fade-up">
         <h2>Meet Our Team</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>Dedicated professionals committed to delivering excellence in hospitality and service.</p>
       </div>
       <div class="team-grid">
         <div class="team-member" data-aos="fade-up" data-aos-delay="100">
@@ -306,15 +335,56 @@
     </section>
     <!-- end....................................... -->
 
+    <section id="contact" class="contact-section">
+      <div class="contact-container">
+        <div class="contact-header" data-aos="fade-up">
+          <h2>Contact Us</h2>
+          <p>Get in touch with us for bookings, inquiries, or any assistance you need.</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Captain Hotel & Restaurant<br>Your City, State, PIN Code</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Phone</h3>
+                <p>+91 XXXXX XXXXX</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@captainhotel.com</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" data-aos="fade-left">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="tel" placeholder="Your Phone">
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer-section">
       <div class="footer-container">
         <div class="footer-brand" data-aos="fade-right">
-          <a href="#" class="footer-logo">apnaStyle</a>
+          <a href="#home" class="footer-logo">Captain Hotel & Restaurant</a>
           <p class="footer-description">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus
-            laudantium at modi nobis ut excepturi facilis, quo itaque harum
-            adipisci enim laboriosam, atque sit ex ipsum ducimus animi tenetur
-            eos?
+            Experience exceptional hospitality and authentic cuisine at Captain
+            Hotel & Restaurant, where military precision meets warm Indian
+            service. Owned by a retired Indian Army Captain, we bring you
+            excellence in every stay and every meal.
           </p>
 
           <form action="#" class="newsletter-form">
@@ -337,35 +407,35 @@
 
         <div class="footer-links" data-aos="fade-up" data-aos-delay="100">
           <h4>Quick Links</h4>
-          <a href="#">Home</a>
-          <a href="#">Shop</a>
-          <a href="#">Collection</a>
-          <a href="#">About Us</a>
-          <a href="#">Contact</a>
+          <a href="#home">Home</a>
+          <a href="#rooms">Rooms</a>
+          <a href="services.html">Services</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
           <h4>Customer Service</h4>
-          <a href="#">Shipping</a>
-          <a href="#">Returns</a>
-          <a href="#">FAQ</a>
-          <a href="#">Size Guide</a>
-          <a href="#">Track Order</a>
+          <a href="booking.html">Booking</a>
+          <a href="cancellation.html">Cancellation</a>
+          <a href="faq.html">FAQ</a>
+          <a href="payment.html">Payment</a>
+          <a href="track-booking.html">Track Booking</a>
         </div>
 
         <div class="footer-links" data-aos="fade-up" data-aos-delay="300">
           <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms & Services</a>
-          <a href="#">Accessibility</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Site Map</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-conditions.html">Terms & Conditions</a>
+          <a href="accessibility.html">Accessibility</a>
+          <a href="cookie-policy.html">Cookie Policy</a>
+          <a href="sitemap.html">Sitemap</a>
         </div>
       </div>
 
       <div class="footer-bottom">
         <div class="footer-bottom-content">
-          <p>&#xA9; 2025 apnaStyle All Right Reserved</p>
+          <p>&#xA9; 2026 Captain Hotel & Restaurant All Right Reserved</p>
           <div class="payment-icons">
             <i class="fab fa-cc-visa"></i>
             <i class="fab fa-cc-mastercard"></i>
