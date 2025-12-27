@@ -11,7 +11,7 @@ const roomData = {
         capacity: '2 Adults',
         size: '250 sq. ft.',
         view: 'City View',
-        images: ['prod1.jpeg', 'prod2.jpg', 'prod3.jpeg', 'prod4.jpeg']
+        images: ['images/r1.jpg', 'images/r2.jpg', 'images/r3.jpg', 'images/r4.jpg']
     },
     deluxe: {
         title: 'Spacious Deluxe Room',
@@ -22,7 +22,7 @@ const roomData = {
         capacity: '2-3 Adults',
         size: '350 sq. ft.',
         view: 'Garden View',
-        images: ['prod2.jpg', 'prod1.jpeg', 'prod3.jpeg', 'prod4.jpeg']
+        images: ['images/r1.jpg', 'images/r2.jpg', 'images/r3.jpg', 'images/r4.jpg']
     },
     suite: {
         title: 'Luxurious Suite',
@@ -33,7 +33,7 @@ const roomData = {
         capacity: '2-4 Adults',
         size: '500 sq. ft.',
         view: 'Panoramic City View',
-        images: ['prod3.jpeg', 'prod4.jpeg', 'prod1.jpeg', 'prod2.jpg']
+        images: ['images/r1.jpg', 'images/r2.jpg', 'images/r3.jpg', 'images/r4.jpg']
     }
 };
 
