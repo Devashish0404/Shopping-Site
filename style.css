@@ -178,18 +178,39 @@ body {
   .nav-links.active {
     left: 0;
   }
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
-  }
-  .hero-text h1 {
-    font-size: 2.5rem;
+    gap: 2rem;
   }
   .hero-text {
-    padding-top: 15rem;
+    padding: 1rem;
+    padding-top: 2rem;
+  }
+  .hero-text h1 {
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+  }
+  .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
   }
   .hero-image-container {
     height: 300px;
+    margin-top: 1rem;
+  }
+  .cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
 .shop-section {
